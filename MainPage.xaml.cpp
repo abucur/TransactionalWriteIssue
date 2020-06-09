@@ -38,7 +38,7 @@ MainPage::MainPage()
 }
 
 static Platform::Array<uint8_t>^ makeData() {
-	// 64 MB
+	// 256 MB
 	static Platform::Array<uint8_t>^ data = nullptr;
 	if (!data) {
 		data = ref new Platform::Array<uint8_t>(256 * 1024 * 1024);
